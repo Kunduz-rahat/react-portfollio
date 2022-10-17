@@ -1,7 +1,11 @@
 import Head from 'next/head';
-import {BsFillMoonFill} from 'react-icons/bs'
+import { fromJSON } from 'postcss';
+import {BsFillMoonFill} from 'react-icons/bs';
+import Image from 'next/image';
+import deved from '../public/deved.png'
 
-
+import {AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import {FaTelegramPlane} from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -24,7 +28,26 @@ export default function Home() {
   </li>
 </ul>
  </nav>
- 
+ <div className='text-center p-10' >
+  <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kunduz Rakhat</h2>
+  <h3 className='text-2xl py-2'>Frontend Developer</h3>
+  <p className='text-md py-5 leading-8 text-gray-800'> Начинающий программист</p>
+
+ </div>
+ <div className='flex justify-center gap-16 py-4 text-gray-800 mt-5 text-4xl'>
+<AiFillLinkedin/>
+<AiFillInstagram/>
+<FaTelegramPlane/>
+<AiFillGithub/>
+ </div>
+ <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20'>
+<Image src={deved}/>
+ </div>
+ </section>
+ <section>
+  <div>
+    <h3 className='text-3xl py-1'>Services I offer</h3>
+  </div>
  </section>
       </main>
 
